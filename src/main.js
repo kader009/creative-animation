@@ -10,4 +10,11 @@ gsap.from(box, {
   delay: 1,
 });
 
-
+gsap.to('.loader', {
+  opacity:0,
+  duration:1,
+  delay:2,
+  onComplete: () =>{
+    document.querySelector('.loader').style.display = 'none'
+  }
+})

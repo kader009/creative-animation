@@ -1,6 +1,6 @@
 import './style.css';
 
-gsap.to('.card', {
+gsap.to( {
   rotate:360,
   delay:2,
   duration:3,

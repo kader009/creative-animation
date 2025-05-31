@@ -1,4 +1,5 @@
 function couter() {
+  // closure
   let count = 100;
 
   return function Increase(add) {
@@ -7,4 +8,16 @@ function couter() {
 }
 
 const addAllvalue = couter();
-addAllvalue(300);
+// addAllvalue(300);
+
+// higher order function
+
+function greet(name) {
+  return `Hello! ${name}`;
+}
+
+function showName(name, callback) {
+  return callback(name);
+}
+
+console.log(showName('kader', greet));

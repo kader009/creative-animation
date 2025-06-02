@@ -20,4 +20,4 @@ function showName(name, callback) {
   return callback(name);
 }
 
-console.log(showName('kader', greet));
+// console.log(showName('kader', greet));
